@@ -19,7 +19,11 @@ Output:
 On triggering the event 1000 times, Head appeared 332 times and Tail 668 times which is roughly inline with the biasness given.
 This is just one of the possibilities.
 
-..............................................................................................................................................................................
+
+
+
+
+
 Task-2
 Evaluate multiple mathematical expressions at once using a Web API
 
@@ -42,7 +46,9 @@ Output
 5 / (7 - 5) => 2.5
 sqrt(5^2 - 4^2) => 3
 sqrt(-3^2 - 4^2) = 5i
-......................................................................................................................................................................
+
+
+
 Task-3 Debugging
 Given below is a Bash / Python script that performs following computation on an integer input (n):
 If n is less than 10: Calculate its Square
