@@ -1,0 +1,52 @@
+Task-3 Debugging
+Given below is a Bash / Python script that performs following computation on an integer
+input (n):
+1. If n is less than 10: Calculate its Square
+a. Example: 4 => 16
+2. If n is between 10 and 20: Calculate the factorial of (n-10)
+a. Example: 15 => 120
+3. If n is greater than 20: Calculate the sum of all integers between 1 and (n-20)
+a. Example: 25 => 15
+
+......................................................................................
+def compute(n):
+ if n < 10:
+ out = n ** 2
+ elif n < 20:
+ out = 1
+ for i in range(1, n - 10 + 1): # Corrected the loop
+range
+ out *= i
+ else:
+ lim = n - 20
+ out = lim * (lim + 1) // 2 # Corrected code here
+ print(out)
+test_cases = [4, 15, 27, 9, 10, 20, 21,25,1,41]
+for n in test_cases:
+ print(f"Input: {n}")
+ compute(n)
+ ..........................................................................................
+
+
+
+//Edge cases//
+Input: 4
+16
+Input: 15
+120
+Input: 27
+28
+Input: 9
+81
+Input: 10
+1
+Input: 20
+0
+Input: 21
+1
+Input: 25
+15
+Input: 1
+1
+Input: 41
+231
